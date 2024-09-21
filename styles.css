@@ -13,7 +13,7 @@
 .title {
     position: absolute;
     top: 20px;
-    left: 50%;
+    left: 40%;
     transform: translateX(-50%);
     font-size: 4rem;
     color: #f7e324; /* Color amarillo */
@@ -23,6 +23,7 @@
     text-align: center;
     align-items: center;
     gap: 1rem;
+    animation: fadeIn 5s ease forwards;
 
     div{
         margin-bottom: 0.6rem;
@@ -880,6 +881,16 @@ mask-image: linear-gradient(to top, transparent 40%, #079097 80%) !important;
   animation: leaf-ans-3 3s linear infinite;
 }
 
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-50px); /* Ajusta el desplazamiento vertical */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 @keyframes leaf-ans-1 {
   0%, 100% {
     transform: rotate(-5deg) scale(1);
