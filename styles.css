@@ -1024,7 +1024,7 @@ mask-image: linear-gradient(to top, transparent 40%, #079097 80%) !important;
   animation-play-state: paused !important;
 }
 
-@media (max-width: 2000px) {
+@media (max-width: 1200px) {
     .flowers {
         position: relative;
         transform: scale(1);
