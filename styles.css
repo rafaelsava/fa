@@ -13,7 +13,6 @@
 .title {
     position: absolute;
     top: 20px;
-    left: 40%;
     transform: translateX(-50%);
     font-size: 4rem;
     color: #f7e324; /* Color amarillo */
@@ -60,7 +59,7 @@ body {
 
 .flowers {
   position: relative;
-  transform: scale(0.7);
+  transform: scale(0.8);
 }
 
 .flower {
@@ -1023,4 +1022,17 @@ mask-image: linear-gradient(to top, transparent 40%, #079097 80%) !important;
 }
 .not-loaded * {
   animation-play-state: paused !important;
+}
+
+@media (max-width: 900px) {
+    .flowers {
+        position: relative;
+        transform: scale(1);
+    }
+    .leaf--0, .leaf--1, .leaf--2, .leaf--3 {
+        display: none;
+    }
+    .title {
+        top: 10%;
+    }
 }
